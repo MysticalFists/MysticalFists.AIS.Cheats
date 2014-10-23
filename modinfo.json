@@ -1,0 +1,26 @@
+{
+    "context": "server",
+    "identifier": "MysticalFists.AIS.Cheats",
+    "display_name": "MysticalFists AI Skirmish Cheats",
+    "description": "MysticalFists AI Skirmish cheats",
+    "author": "MysticalFists",
+    "version": "0.1",
+    "build": "73737",
+    "date": "2014/10/23",
+    "signature": "not yet implemented",
+    "forum": "https://forums.uberent.com/threads/rel-mysticalfists-ai-skirmish-cheats.65457",
+    "icon": "https://raw.githubusercontent.com/MysticalFists/PAGWC/master/MysticalFists.GW.Cheats/ui/mods/MysticalFistsTech/MysticalFists.png",
+    "category": [
+        "in-game",
+        "ai-skirmish",
+		"cheat"
+    ],
+    "scenes": {
+		"live_game": [
+			"coui://ui/main/shared/js/build.js",
+			"coui://pa/units/unit_list.json"
+		]
+	},
+    "priority": 100,
+    "enabled": true
+}
