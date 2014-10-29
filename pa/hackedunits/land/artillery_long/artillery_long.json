@@ -70,7 +70,7 @@
       "layer": "WL_WaterSurface"
     }
   ],
-  "nearby_target_tick_update_interval": 30,
+  "nearby_target_tick_update_interval": 1,
   "recon": {
     "observer": {
       "items": [
@@ -88,7 +88,7 @@
     {
       "aim_bone": "socket_aim",
       "muzzle_bone": "socket_muzzle",
-      "spec_id": "/pa/units/land/artillery_long/artillery_long_tool_weapon.json"
+      "spec_id": "/pa/hackedunits/land/artillery_long/artillery_long_tool_weapon.json"
     }
   ],
   "unit_types": [

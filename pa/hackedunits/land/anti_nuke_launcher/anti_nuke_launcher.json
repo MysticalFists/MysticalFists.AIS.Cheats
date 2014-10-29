@@ -20,7 +20,7 @@
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
   "build_metal_cost": 1,
   "buildable_projectiles": [
-    "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_ammo.json"
+    "/pa/hackedunits/land/anti_nuke_launcher/anti_nuke_launcher_ammo.json"
   ],
   "command_caps": [
     "ORDER_FactoryBuild"
@@ -41,7 +41,7 @@
   },
   "factory": {
     "default_build_stance": "Continuous",
-    "initial_build_spec": "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_ammo.json",
+    "initial_build_spec": "/pa/hackedunits/land/anti_nuke_launcher/anti_nuke_launcher_ammo.json",
     "spawn_points": [
       "socket_missile01",
       "socket_missile02",
@@ -183,7 +183,7 @@
     {
       "aim_bone": "bone_root",
       "muzzle_bone": "bone_root",
-      "spec_id": "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_tool_weapon.json"
+      "spec_id": "/pa/hackedunits/land/anti_nuke_launcher/anti_nuke_launcher_tool_weapon.json"
     }
   ],
   "unit_types": [

@@ -18,7 +18,7 @@
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
   "build_metal_cost": 1,
   "buildable_projectiles": [
-    "/pa/units/land/nuke_launcher/nuke_launcher_ammo.json"
+    "/pa/hackedunits/land/nuke_launcher/nuke_launcher_ammo.json"
   ],
   "command_caps": [
     "ORDER_FactoryBuild",
@@ -40,7 +40,7 @@
   },
   "factory": {
     "default_build_stance": "Continuous",
-    "initial_build_spec": "/pa/units/land/nuke_launcher/nuke_launcher_ammo.json",
+    "initial_build_spec": "/pa/hackedunits/land/nuke_launcher/nuke_launcher_ammo.json",
     "spawn_points": [
       "bone_missile01"
     ],
