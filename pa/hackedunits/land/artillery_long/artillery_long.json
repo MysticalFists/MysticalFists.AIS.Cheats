@@ -14,6 +14,8 @@
   ],
   "description": "!LOC(units:advanced_artillery_equipped_with_long_range_anti_land_and_anti_ship_gun.message):Advanced artillery- Equipped with long range anti-land, and anti-ship gun.",
   "display_name": "!LOC(units:holkins.message):Holkins",
+  "energy": 600000,
+  "energy_demand": 1,
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/structure_small"
@@ -51,32 +53,33 @@
     30.8,
     15.0376
   ],
+  "metal": 70000,
   "model": [
     {
-      "animations": {
-        "aim_up": "/pa/units/land/artillery_long/artillery_long_anim_aimUp.papa"
-      },
       "animtree": "/pa/anim/anim_trees/artillery_building_long_anim_tree.json",
       "filename": "/pa/units/land/artillery_long/artillery_long.papa",
       "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_artillery_long.json"
     },
     {
-      "animations": {
-        "aim_up": "/pa/units/land/artillery_long/artillery_long_anim_aimUp.papa"
-      },
       "animtree": "/pa/anim/anim_trees/artillery_building_long_anim_tree.json",
       "filename": "/pa/units/sea/artillery_long/artillery_long.papa",
       "layer": "WL_WaterSurface"
     }
   ],
-  "nearby_target_tick_update_interval": 1,
+  "nearby_target_tick_update_interval": 30,
   "recon": {
     "observer": {
       "items": [
         {
           "channel": "sight",
           "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
           "radius": 100,
           "shape": "capsule"
         }

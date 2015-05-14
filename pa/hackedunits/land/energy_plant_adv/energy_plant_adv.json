@@ -12,6 +12,8 @@
   "build_metal_cost": 1,
   "description": "!LOC(units:advanced_manufacturing_produces_energy.message):Advanced manufacturing- Produces energy.",
   "display_name": "!LOC(units:advanced_energy_plant.message):Advanced Energy Plant",
+  "energy": 600000,
+  "energy_demand": 1,
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/energy"
@@ -243,12 +245,13 @@
       "radius": 4.0
     }
   ],
-  "max_health": 135000,
+  "max_health": 15000,
   "mesh_bounds": [
     20,
     20,
     23.5
   ],
+  "metal": 70000,
   "model": [
     {
       "animations": {
@@ -269,7 +272,7 @@
     }
   ],
   "production": {
-    "energy": 600000
+    "energy": 500000
   },
   "recon": {
     "observer": {
@@ -277,6 +280,12 @@
         {
           "channel": "sight",
           "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
           "radius": 100,
           "shape": "capsule"
         }

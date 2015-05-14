@@ -15,6 +15,8 @@
   },
   "description": "!LOC(units:basic_manufacturing_produces_metal_can_only_be_placed_on_metal_deposits.message):Basic manufacturing- Produces metal, can only be placed on metal deposits.",
   "display_name": "!LOC(units:metal_extractor.message):Metal Extractor",
+  "energy": 600000,
+  "energy_demand": 1,
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/metal"
@@ -43,12 +45,13 @@
       "radius": 2.0
     }
   ],
-  "max_health": 10000,
+  "max_health": 3000,
   "mesh_bounds": [
     9.2,
     10.0407,
     23.5
   ],
+  "metal": 70000,
   "model": [
     {
       "animations": {
@@ -72,7 +75,7 @@
     16
   ],
   "production": {
-    "metal": 70000
+    "metal": 7000
   },
   "recon": {
     "observer": {
@@ -80,6 +83,12 @@
         {
           "channel": "sight",
           "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
           "radius": 100,
           "shape": "capsule"
         }
