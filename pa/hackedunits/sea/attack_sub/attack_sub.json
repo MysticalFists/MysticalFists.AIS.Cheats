@@ -1,1 +1,100 @@
-{"base_spec":"/pa/units/sea/base_ship/base_ship.json","display_name":"Barracuda","description":"!LOC(units:submarine_class_anti_sub_and_anti_ship_torpedoes.message):Submarine Class: Anti-sub and anti-ship torpedoes","max_health":1650,"build_metal_cost":1,"spawn_layers":"WL_Underwater","unit_types":["UNITTYPE_Naval","UNITTYPE_Mobile","UNITTYPE_Offense","UNITTYPE_Basic","UNITTYPE_Sub","UNITTYPE_FactoryBuild"],"guard_layer":"WL_AnyWater","navigation":{"type":"underwater","acceleration":40,"brake":120,"move_speed":12,"turn_speed":60},"physics":{"underwater":true,"shape":"sphere","radius":3,"push_class":2},"recon":{"observer":{"items":[{"layer":"surface_and_air","channel":"sight","shape":"capsule","radius":150},{"layer":"underwater","channel":"sight","shape":"capsule","radius":150}]}},"model":{"filename":"/pa/units/sea/attack_sub/attack_sub.papa","arrows":5},"tools":[{"spec_id":"/pa/units/sea/attack_sub/attack_sub_tool_weapon.json","aim_bone":"bone_root","muzzle_bone":"bone_root"}],"events":{"build_complete":{"audio_cue":"/SE/Build_Complete/sea"},"fired":{"audio_cue":"/SE/Weapons/sea/attack_sub_fire"},"died":{"audio_cue":"/SE/Death/Sea_sub","effect_spec":"/pa/effects/specs/default_explosion.pfx","effect_scale":2.0}},"audio":{"loops":{"move":{"cue":"/SE/Movement/sea/attack_sub_loop","flag":"vel_changed","should_start_func":"is_moving","should_stop_func":"is_not_moving"}}},"TEMP_texelinfo":8.37977,"mesh_bounds":[4,15,4],"energy":600000,"energy_demand":1,"metal":70000}
+{
+  "TEMP_texelinfo": 8.37977,
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/sea/attack_sub_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    }
+  },
+  "base_spec": "/pa/units/sea/base_ship/base_ship.json",
+  "build_metal_cost": 1,
+  "description": "!LOC:Submarine- High damage. Cannot be targeted by cannons. Attacks sea and undersea targets.",
+  "display_name": "!LOC:Barracuda",
+  "energy": 600000,
+  "energy_demand": 1,
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/sea"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Sea_sub",
+      "effect_scale": 0.7,
+      "effect_spec": "/pa/effects/specs/default_explosion_naval_sub.pfx"
+    },
+    "fired": {
+      "audio_cue": "/SE/Weapons/sea/attack_sub_fire"
+    }
+  },
+  "fx_offsets": [
+    {
+      "filename": "/pa/units/sea/attack_sub/attack_sub_wake.pfx",
+      "type": "moving_forward"
+    }
+  ],
+  "guard_layer": "WL_AnyWater",
+  "max_health": 1650,
+  "mesh_bounds": [
+    4,
+    15,
+    4
+  ],
+  "metal": 70000,
+  "model": {
+    "arrows": 5,
+    "filename": "/pa/units/sea/attack_sub/attack_sub.papa"
+  },
+  "navigation": {
+    "acceleration": 40,
+    "brake": 120,
+    "move_speed": 12,
+    "turn_accel": 30,
+    "turn_speed": 60,
+    "type": "underwater"
+  },
+  "physics": {
+    "radius": 3,
+    "shape": "sphere",
+    "underwater": true
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 150,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 150,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": 28.0
+  },
+  "spawn_layers": "WL_Underwater",
+  "tools": [
+    {
+      "aim_bone": "bone_root",
+      "muzzle_bone": "bone_root",
+      "spec_id": "/pa/units/sea/attack_sub/attack_sub_tool_weapon.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Naval",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Basic",
+    "UNITTYPE_Sub",
+    "UNITTYPE_FactoryBuild"
+  ]
+}

@@ -1,1 +1,180 @@
-{"base_spec":"/pa/units/land/base_structure/base_structure.json","display_name":"!LOC(units:advanced_radar.message):Advanced Radar","description":"!LOC(units:advanced_radar_detects_nearby_enemy_land_sea_and_air_units.message):Advanced radar- Detects nearby enemy land, sea, and air units.","max_health":4500,"build_metal_cost":1,"consumption":{"energy":4000},"energy_efficiency_requirement":0.9,"atrophy_rate":80.0,"atrophy_cool_down":15.0,"spawn_layers":"WL_AnySurface","area_build_type":"Sphere","area_build_separation":200,"unit_types":["UNITTYPE_Land","UNITTYPE_Structure","UNITTYPE_Advanced","UNITTYPE_Recon","UNITTYPE_FabAdvBuild"],"physics":{"collision_layers":"WL_AnySurface"},"recon":{"observer":{"items":[{"layer":"surface_and_air","channel":"sight","shape":"capsule","radius":300,"uses_energy":true},{"layer":"surface_and_air","channel":"radar","shape":"capsule","radius":900,"uses_energy":true},{"layer":"orbital","channel":"sight","shape":"capsule","radius":1200,"uses_energy":true},{"layer":"underwater","channel":"sight","shape":"capsule","radius":300,"uses_energy":true},{"layer":"underwater","channel":"radar","shape":"capsule","radius":900,"uses_energy":true}]}},"model":[{"layer":"WL_LandHorizontal","filename":"/pa/units/land/radar_adv/radar_adv.papa","animations":{"start":"/pa/units/land/radar_adv/radar_adv_anim_start.papa","loop":"/pa/units/land/radar_adv/radar_adv_anim_loop.papa","end":"/pa/units/land/radar_adv/radar_adv_anim_end.papa"},"animtree":"/pa/anim/anim_trees/powered_loop_anim_tree.json","skirt_decal":"/pa/effects/specs/skirt_radar_adv.json"},{"layer":"WL_WaterSurface","filename":"/pa/units/sea/radar_adv/radar_adv.papa","animations":{"start":"/pa/units/land/radar_adv/radar_adv_anim_start.papa","loop":"/pa/units/land/radar_adv/radar_adv_anim_loop.papa","end":"/pa/units/land/radar_adv/radar_adv_anim_end.papa"},"animtree":"/pa/anim/anim_trees/powered_loop_anim_tree.json"}],"events":{"build_complete":{"audio_cue":"/SE/Build_Complete/radar"},"died":{"audio_cue":"/SE/Death/radar","effect_scale":0.9}},"fx_offsets":[{"type":"energy","filename":"/pa/units/land/radar_adv/radar_adv_top_on.pfx","bone":"bone_rotator","offset":[0,0.145,1.425],"orientation":[0,-45,0]},{"type":"energy","filename":"/pa/units/land/radar_adv/radar_adv_dish01_on.pfx","bone":"bone_dish01","offset":[0,-0.264,0.0],"orientation":[0,-90,0]},{"type":"energy","filename":"/pa/units/land/radar_adv/radar_adv_dish02_on.pfx","bone":"bone_dish02","offset":[0,-0.264,0.0],"orientation":[0,-90,0]}],"audio":{"selection_response":{"cue":"/SE/Selection/structure/radar"}},"lamps":[{"offset":[0.0,1.24,0.05],"radius":3.0,"color":[1.0,1.0,1.0],"intensity":2.0,"bone":"bone_elbow"}],"mesh_bounds":[8.58559,7.71255,29],"TEMP_texelinfo":16.9774,"energy":600000,"energy_demand":1,"metal":70000}
+{
+  "TEMP_texelinfo": 16.9774,
+  "area_build_separation": 200,
+  "area_build_type": "Sphere",
+  "atrophy_cool_down": 15.0,
+  "atrophy_rate": 80.0,
+  "audio": {
+    "selection_response": {
+      "cue": "/SE/Selection/structure/radar"
+    }
+  },
+  "base_spec": "/pa/units/land/base_structure/base_structure.json",
+  "build_metal_cost": 1,
+  "consumption": {
+    "energy": 0
+  },
+  "description": "!LOC:Advanced radar- Detects nearby enemy land, sea, and air units.",
+  "display_name": "!LOC:Advanced Radar",
+  "energy": 600000,
+  "energy_demand": 1,
+  "energy_efficiency_requirement": 0.9,
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/radar"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/radar",
+      "effect_scale": 0.9
+    }
+  },
+  "fx_offsets": [
+    {
+      "bone": "bone_rotator",
+      "filename": "/pa/units/land/radar_adv/radar_adv_top_on.pfx",
+      "offset": [
+        0,
+        0.145,
+        1.425
+      ],
+      "orientation": [
+        0,
+        -45,
+        0
+      ],
+      "type": "energy"
+    },
+    {
+      "bone": "bone_dish01",
+      "filename": "/pa/units/land/radar_adv/radar_adv_dish01_on.pfx",
+      "offset": [
+        0,
+        -0.264,
+        0.0
+      ],
+      "orientation": [
+        0,
+        -90,
+        0
+      ],
+      "type": "energy"
+    },
+    {
+      "bone": "bone_dish02",
+      "filename": "/pa/units/land/radar_adv/radar_adv_dish02_on.pfx",
+      "offset": [
+        0,
+        -0.264,
+        0.0
+      ],
+      "orientation": [
+        0,
+        -90,
+        0
+      ],
+      "type": "energy"
+    }
+  ],
+  "lamps": [
+    {
+      "bone": "bone_elbow",
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "intensity": 2.0,
+      "offset": [
+        0.0,
+        1.24,
+        0.05
+      ],
+      "radius": 3.0
+    }
+  ],
+  "max_health": 4500,
+  "mesh_bounds": [
+    8.58559,
+    7.71255,
+    29
+  ],
+  "metal": 70000,
+  "model": [
+    {
+      "animations": {
+        "end": "/pa/units/land/radar_adv/radar_adv_anim_end.papa",
+        "loop": "/pa/units/land/radar_adv/radar_adv_anim_loop.papa",
+        "start": "/pa/units/land/radar_adv/radar_adv_anim_start.papa"
+      },
+      "animtree": "/pa/anim/anim_trees/powered_loop_anim_tree.json",
+      "filename": "/pa/units/land/radar_adv/radar_adv.papa",
+      "layer": "WL_LandHorizontal",
+      "skirt_decal": "/pa/effects/specs/skirt_radar_adv.json"
+    },
+    {
+      "animations": {
+        "end": "/pa/units/land/radar_adv/radar_adv_anim_end.papa",
+        "loop": "/pa/units/land/radar_adv/radar_adv_anim_loop.papa",
+        "start": "/pa/units/land/radar_adv/radar_adv_anim_start.papa"
+      },
+      "animtree": "/pa/anim/anim_trees/powered_loop_anim_tree.json",
+      "filename": "/pa/units/sea/radar_adv/radar_adv.papa",
+      "layer": "WL_WaterSurface"
+    }
+  ],
+  "physics": {
+    "collision_layers": "WL_AnySurface"
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 300,
+          "shape": "capsule",
+          "uses_energy": true
+        },
+        {
+          "channel": "radar",
+          "layer": "surface_and_air",
+          "radius": 900,
+          "shape": "capsule",
+          "uses_energy": true
+        },
+        {
+          "channel": "sight",
+          "layer": "orbital",
+          "radius": 1200,
+          "shape": "capsule",
+          "uses_energy": true
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 300,
+          "shape": "capsule",
+          "uses_energy": true
+        },
+        {
+          "channel": "radar",
+          "layer": "underwater",
+          "radius": 900,
+          "shape": "capsule",
+          "uses_energy": true
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": 22.0
+  },
+  "spawn_layers": "WL_AnySurface",
+  "unit_types": [
+    "UNITTYPE_Land",
+    "UNITTYPE_Structure",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_Recon",
+    "UNITTYPE_FabAdvBuild"
+  ]
+}

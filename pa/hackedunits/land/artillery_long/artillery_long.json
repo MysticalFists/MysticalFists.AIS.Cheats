@@ -12,8 +12,8 @@
   "command_caps": [
     "ORDER_Attack"
   ],
-  "description": "!LOC(units:advanced_artillery_equipped_with_long_range_anti_land_and_anti_ship_gun.message):Advanced artillery- Equipped with long range anti-land, and anti-ship gun.",
-  "display_name": "!LOC(units:holkins.message):Holkins",
+  "description": "!LOC:Advanced Artillery- Extremely long-range heavy damage. Can lay siege from very far away. Attacks land and sea targets.",
+  "display_name": "Holkins",
   "energy": 600000,
   "energy_demand": 1,
   "events": {
@@ -22,7 +22,7 @@
     },
     "died": {
       "audio_cue": "/SE/Death/structure_small",
-      "effect_scale": 1.0
+      "effect_scale": 1.2
     },
     "fired": {
       "audio_cue": "/SE/Weapons/structure/artillery_long_fire",
@@ -49,8 +49,8 @@
   ],
   "max_health": 15000,
   "mesh_bounds": [
-    13,
-    30.8,
+    15,
+    25,
     15.0376
   ],
   "metal": 70000,
@@ -68,6 +68,10 @@
     }
   ],
   "nearby_target_tick_update_interval": 30,
+  "placement_size": [
+    30,
+    30
+  ],
   "recon": {
     "observer": {
       "items": [
@@ -85,6 +89,9 @@
         }
       ]
     }
+  },
+  "selection_icon": {
+    "diameter": 40.0
   },
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "tools": [

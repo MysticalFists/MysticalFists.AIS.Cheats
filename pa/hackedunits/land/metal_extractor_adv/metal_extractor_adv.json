@@ -13,8 +13,8 @@
   "consumption": {
     "energy": 0
   },
-  "description": "!LOC(units:advanced_manufacturing_produces_metal_can_only_be_placed_on_metal_deposits.message):Advanced manufacturing- Produces metal, can only be placed on metal deposits.",
-  "display_name": "!LOC(units:advanced_metal_extractor.message):Advanced Metal Extractor",
+  "description": "!LOC:Advanced manufacturing- Produces metal, can only be placed on metal deposits.",
+  "display_name": "!LOC:Advanced Metal Extractor",
   "energy": 600000,
   "energy_demand": 1,
   "events": {
@@ -29,6 +29,7 @@
   "feature_requirements": [
     "metal_spot"
   ],
+  "force_snap_to_feature_orientation": true,
   "lamps": [
     {
       "color": [
@@ -73,11 +74,11 @@
     }
   ],
   "placement_size": [
-    20,
+    16,
     16
   ],
   "production": {
-    "metal": 24000
+    "metal": 24
   },
   "recon": {
     "observer": {
@@ -100,6 +101,9 @@
   "replaceable_units": [
     "/pa/units/land/metal_extractor/metal_extractor.json"
   ],
+  "selection_icon": {
+    "diameter": 28.0
+  },
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "strategic_icon_priority": 5,
   "unit_types": [

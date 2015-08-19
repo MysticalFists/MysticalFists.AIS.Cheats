@@ -10,8 +10,8 @@
   },
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
   "build_metal_cost": 1,
-  "description": "!LOC(units:advanced_manufacturing_produces_energy.message):Advanced manufacturing- Produces energy.",
-  "display_name": "!LOC(units:advanced_energy_plant.message):Advanced Energy Plant",
+  "description": "!LOC:Advanced manufacturing- Produces energy.",
+  "display_name": "!LOC:Advanced Energy Plant",
   "energy": 600000,
   "energy_demand": 1,
   "events": {
@@ -20,7 +20,8 @@
     },
     "died": {
       "audio_cue": "/SE/Death/Factory",
-      "effect_scale": 1.25
+      "effect_scale": 1.0,
+      "effect_spec": "/pa/effects/specs/default_building_explosion_large.pfx"
     }
   },
   "fx_offsets": [
@@ -271,8 +272,12 @@
       "layer": "WL_WaterSurface"
     }
   ],
+  "placement_size": [
+    30,
+    30
+  ],
   "production": {
-    "energy": 500000
+    "energy": 5000
   },
   "recon": {
     "observer": {
@@ -291,6 +296,9 @@
         }
       ]
     }
+  },
+  "selection_icon": {
+    "diameter": 39.0
   },
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "unit_types": [

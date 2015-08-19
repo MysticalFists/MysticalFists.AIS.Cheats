@@ -1,1 +1,134 @@
-{"base_spec":"/pa/units/sea/base_ship/base_ship.json","display_name":"!LOC(units:narwhal.message):Narwhal","description":"!LOC(units:frigate_basic_anti_air_missiles_and_anti_ship_guns.message):Frigate- Basic anti-air missiles and anti-ship guns.","max_health":2250,"build_metal_cost":1,"spawn_layers":"WL_WaterSurface","mesh_bounds":[6,15,8],"unit_types":["UNITTYPE_Naval","UNITTYPE_Mobile","UNITTYPE_Offense","UNITTYPE_Basic","UNITTYPE_AirDefense","UNITTYPE_FactoryBuild"],"guard_layer":"WL_AnySurface","navigation":{"type":"deepwater","acceleration":30,"brake":90,"move_speed":9,"turn_speed":60},"physics":{"shape":"sphere","radius":3,"push_class":2},"recon":{"observer":{"items":[{"layer":"surface_and_air","channel":"sight","shape":"capsule","radius":180},{"layer":"underwater","channel":"sight","shape":"capsule","radius":180}]}},"model":{"filename":"/pa/units/sea/frigate/frigate.papa","animtree":"/pa/anim/anim_trees/frigate_anim_tree.json"},"nearby_target_tick_update_interval":3,"tools":[{"spec_id":"/pa/units/sea/frigate/frigate_tool_weapon_shell.json","aim_bone":"bone_pitch01","record_index":0,"fire_event":"fired0","muzzle_bone":["socket_muzzle01"]},{"spec_id":"/pa/units/sea/frigate/frigate_tool_weapon_aa.json","aim_bone":"bone_pitch02","record_index":1,"fire_event":"fired1","muzzle_bone":["socket_rightMuzzle02","socket_leftMuzzle02"]},{"spec_id":"/pa/units/sea/frigate/frigate_tool_weapon_torpedo.json","record_index":2,"aim_bone":"bone_root","muzzle_bone":"bone_root","fire_event":"fired2","show_range":false}],"events":{"build_complete":{"audio_cue":"/SE/Build_Complete/sea"},"fired0":{"audio_cue":"/SE/Weapons/sea/frigate_fire_1","effect_spec":"/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle01","effect_scale":0.5},"fired1":{"audio_cue":"/SE/Weapons/sea/frigate_fire_1","effect_spec":"/pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle02 /pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle02","effect_scale":0.5},"fired2":{"audio_cue":"/SE/Weapons/sea/torpedo_fire","effect_spec":"/pa/effects/specs/tank_muzzle_flash.pfx socket_torpedoMuzzle","effect_scale":5.0},"died":{"audio_cue":"/SE/Death/Sea_large","effect_scale":0.75}},"audio":{"loops":{"move":{"cue":"/SE/Movement/sea/frigate_loop","flag":"vel_changed","should_start_func":"is_moving","should_stop_func":"is_not_moving"}}},"TEMP_texelinfo":19.1546,"energy":600000,"energy_demand":1,"metal":70000}
+{
+  "TEMP_texelinfo": 19.1546,
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/sea/frigate_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    }
+  },
+  "base_spec": "/pa/units/sea/base_ship/base_ship.json",
+  "build_metal_cost": 1,
+  "description": "!LOC:Frigate- Durable. Rapid-fire. Attacks land, air, and sea targets.",
+  "display_name": "!LOC:Narwhal",
+  "energy": 600000,
+  "energy_demand": 1,
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/sea"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Sea_large",
+      "effect_scale": 0.7,
+      "effect_spec": "/pa/effects/specs/default_explosion_naval.pfx"
+    },
+    "fired0": {
+      "audio_cue": "/SE/Weapons/sea/frigate_fire_1",
+      "effect_scale": 0.5,
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle01"
+    },
+    "fired1": {
+      "audio_cue": "/SE/Weapons/sea/frigate_fire_1",
+      "effect_scale": 0.5,
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle02 /pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle02"
+    },
+    "fired2": {
+      "audio_cue": "/SE/Weapons/sea/torpedo_fire",
+      "effect_scale": 5.0,
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_torpedoMuzzle"
+    }
+  },
+  "fx_offsets": [
+    {
+      "filename": "/pa/units/sea/frigate/frigate_wake.pfx",
+      "type": "moving_forward"
+    }
+  ],
+  "guard_layer": "WL_AnySurface",
+  "max_health": 2250,
+  "mesh_bounds": [
+    6,
+    15,
+    8
+  ],
+  "metal": 70000,
+  "model": {
+    "animtree": "/pa/anim/anim_trees/frigate_anim_tree.json",
+    "filename": "/pa/units/sea/frigate/frigate.papa"
+  },
+  "navigation": {
+    "acceleration": 30,
+    "brake": 90,
+    "move_speed": 9,
+    "turn_accel": 20,
+    "turn_speed": 60,
+    "type": "deepwater"
+  },
+  "nearby_target_tick_update_interval": 3,
+  "physics": {
+    "radius": 3,
+    "shape": "sphere"
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 180,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 180,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": 26.0
+  },
+  "spawn_layers": "WL_WaterSurface",
+  "tools": [
+    {
+      "aim_bone": "bone_pitch01",
+      "fire_event": "fired0",
+      "muzzle_bone": [
+        "socket_muzzle01"
+      ],
+      "record_index": 0,
+      "spec_id": "/pa/units/sea/frigate/frigate_tool_weapon_shell.json"
+    },
+    {
+      "aim_bone": "bone_pitch02",
+      "fire_event": "fired1",
+      "muzzle_bone": [
+        "socket_rightMuzzle02",
+        "socket_leftMuzzle02"
+      ],
+      "record_index": 1,
+      "spec_id": "/pa/units/sea/frigate/frigate_tool_weapon_aa.json"
+    },
+    {
+      "aim_bone": "bone_root",
+      "fire_event": "fired2",
+      "muzzle_bone": "bone_root",
+      "record_index": 2,
+      "show_range": false,
+      "spec_id": "/pa/units/sea/frigate/frigate_tool_weapon_torpedo.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Naval",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Basic",
+    "UNITTYPE_AirDefense",
+    "UNITTYPE_FactoryBuild"
+  ]
+}

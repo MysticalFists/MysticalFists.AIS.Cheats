@@ -13,8 +13,8 @@
   "consumption": {
     "energy": 0
   },
-  "description": "!LOC(units:basic_manufacturing_produces_metal_can_only_be_placed_on_metal_deposits.message):Basic manufacturing- Produces metal, can only be placed on metal deposits.",
-  "display_name": "!LOC(units:metal_extractor.message):Metal Extractor",
+  "description": "!LOC:Basic manufacturing- Produces metal, can only be placed on metal deposits.",
+  "display_name": "!LOC:Metal Extractor",
   "energy": 600000,
   "energy_demand": 1,
   "events": {
@@ -29,6 +29,7 @@
   "feature_requirements": [
     "metal_spot"
   ],
+  "force_snap_to_feature_orientation": true,
   "lamps": [
     {
       "color": [
@@ -71,11 +72,11 @@
     }
   ],
   "placement_size": [
-    20,
+    16,
     16
   ],
   "production": {
-    "metal": 7000
+    "metal": 7
   },
   "recon": {
     "observer": {
@@ -98,6 +99,9 @@
   "replaceable_units": [
     "/pa/units/land/metal_extractor_adv/metal_extractor_adv.json"
   ],
+  "selection_icon": {
+    "diameter": 24.0
+  },
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "unit_types": [
     "UNITTYPE_Structure",

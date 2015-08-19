@@ -10,8 +10,8 @@
   },
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
   "build_metal_cost": 1,
-  "description": "!LOC(units:basic_manufacturing_produces_energy.message):Basic manufacturing- Produces energy.",
-  "display_name": "!LOC(units:energy_plant.message):Energy Plant",
+  "description": "!LOC:Basic manufacturing- Produces energy.",
+  "display_name": "!LOC:Energy Plant",
   "energy": 600000,
   "energy_demand": 1,
   "events": {
@@ -221,11 +221,11 @@
     }
   ],
   "placement_size": [
-    12,
-    12
+    15,
+    15
   ],
   "production": {
-    "energy": 600000
+    "energy": 600
   },
   "recon": {
     "observer": {
@@ -244,6 +244,9 @@
         }
       ]
     }
+  },
+  "selection_icon": {
+    "diameter": 21.5
   },
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "unit_types": [
